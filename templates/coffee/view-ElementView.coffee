@@ -5,9 +5,9 @@ Backbone.$          = require 'jquery'
 
 locUtility = require '../common/utility/locUtility.coffee'
 
-ElementsView = Backbone.View.extend
+<%= moduleName %>View = Backbone.View.extend
 	tagName: 'div'
-	className: 'bbs-wrap'
+	className: 'class'
 	events:
 		'touchend .xxx': 'xxx'
 
@@ -18,8 +18,11 @@ ElementsView = Backbone.View.extend
 	dataLoadComplete: ->
 
 		return
+
 	render: ->
+
 		@$el.html( @template() )
+
 		return @
 
 	template: ->
@@ -35,6 +38,7 @@ ElementsView = Backbone.View.extend
 
 		@stopListening()
 		@undelegateEvents()
+
 		return
 
-module.exports = ElementsView
+module.exports = <%= moduleName %>View

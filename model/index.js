@@ -40,7 +40,7 @@ module.exports = yeoman.generators.Base.extend({
 
   		this.fs.copyTpl(
   			// this.templatePath('model.coffee'),
-  			this.templatePath('../../templates/model.coffee'),
+  			this.templatePath('../../templates/coffee/model.coffee'),
   			// this.sourceRoot('templates/modelaa.coffee'),
   			this.destinationPath(this.env.options.appPath+'/coffee/model-'+ myName +'.coffee'),
   			{ moduleName: myName }
