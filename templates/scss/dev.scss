@@ -1,0 +1,24 @@
+@mixin sprite-img {
+	background-image: url("../../img/<% moduleName %>/<% moduleName %>-top-sprite.png");
+	-webkit-background-size: 320px;
+	background-size: 320px;
+	background-repeat: no-repeat;
+}
+
+.header-wrap{
+	
+	width: 320px;
+	height: 47px;
+	@include sprite-img;
+	background-position: 0px 0px;
+	position: fixed;
+	z-index: 100;
+
+
+}
+
+
+
+.dmmybox{
+	height: 50px;
+}

@@ -13,6 +13,15 @@ var BackboneGenerator = yeoman.generators.Base.extend({
     console.log('this.options:',this.options);
     console.log('arguments:',arguments);
 
+    this.option('appPath', {
+      desc: 'Name of application directory',
+      type: 'String',
+      defaults: 'game',
+      banner: 'some banner'
+    });
+
+    this.env.options.appPath = this.options.appPath || 'app';
+
     // yo loc ***
     // *** を出力
     var ag0 = arguments[0] || 'none'
@@ -31,6 +40,27 @@ var BackboneGenerator = yeoman.generators.Base.extend({
     console.log('hikisuu--:',this.options.coffee);
 
   },
+
+  writing: {
+  	// app: function () {
+
+  	//   this.fs.copy(
+  	//     this.templatePath('_package.json'),
+  	//     this.destinationPath('package.json')
+  	//   );
+  	//   this.fs.copy(
+  	//     this.templatePath('_bower.json'),
+  	//     this.destinationPath('bower.json')
+  	//   );
+  	//   this.fs.copy(
+  	//     this.templatePath('app.coffee'),
+  	//     this.destinationPath(this.env.options.appPath+'/coffee/app.coffee')
+  	//   );
+  	// }
+
+  },
+
+
 
   install: function () {
     this.installDependencies();
