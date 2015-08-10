@@ -6,7 +6,7 @@
   "main": "app/index.js",
   "repository": {
   	"type": "git",
-  	"url": "git+https://github.com/renowan/generator-loc"
+  	"url": "https://github.com/renowan/generator-loc"
   },
   "author": {
     "name": "Renowan",
@@ -26,7 +26,7 @@
   "dependencies": {
     "chalk": "^1.0.0",
     "lodash": "^3.10.1",
-    "hubot-hipchat": "git://github.com/juno/hubot-hipchat.git",
+    "hubot-hipchat": "https://github.com/renowan/generator-loc",
     "underscore.string": "^3.0.3",
     "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
