@@ -29,18 +29,35 @@ To install generator-loc from npm, run:
 npm install -g generator-loc
 ```
 
-Finally, initiate the generator:
+Appの生成、必要ないので実装していない:
 
 ```bash
 yo loc
 ```
 
-### Getting To Know Yeoman
+### View生成
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+HTML body全体を操るView
+第二引数「dir」は生成されるディレクトリ指定。省略可。
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+```bash
+yo loc:bodyView {viewName} {dir}
+```
 
+インスタンス化されたView。
+第二引数「dir」は生成されるディレクトリ指定。省略可。
+
+```bash
+yo loc:elementView {viewName} {dir}
+```
+
+### Pageと基本構成の生成
+
+HTML、View、Sass、Gulp一式
+
+```bash
+yo loc:page {pageName}
+```
 
 ## License
 
