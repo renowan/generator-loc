@@ -5,8 +5,9 @@ Backbone.$          = require 'jquery'
 
 locUtility = require '../common/utility/locUtility.coffee'
 
+
 <%= moduleName %>View = Backbone.View.extend
-	tagName: 'div'
+	tagName:   'div'
 	className: 'class'
 	events:
 		'touchend .xxx': 'xxx'

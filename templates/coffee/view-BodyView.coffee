@@ -6,13 +6,14 @@ IScroll             = require 'iscroll'
 render              = require 'jsrender'
 
 AjaxModel           = require '../common/utility/model-AjaxModel.coffee'
+locUtility          = require '../common/utility/locUtility.coffee'
 
-popupView                   = require './instance-popup.coffee'
-appModel                    = require './instance-appModel.coffee'
-appViewTemplate             = require './template-AppView.coffee'
+popupView           = require './instance-popup.coffee'
+appModel            = require './instance-appModel.coffee'
+appViewTemplate     = require './template-AppView.coffee'
 
 
-BodyView = Backbone.View.extend
+<%= moduleName %>View = Backbone.View.extend
 	el: 'body'
 	events:
 		'click .xxx':  'xx'
@@ -37,4 +38,4 @@ BodyView = Backbone.View.extend
 		return
 
 
-module.exports = BodyView
+module.exports = <%= moduleName %>View
