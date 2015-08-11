@@ -6,7 +6,7 @@
   "main": "app/index.js",
   "repository": {
   	"type": "git",
-  	"url": "https://github.com/renowan/generator-loc"
+  	"url": "git+https://github.com/renowan/generator-loc.git"
   },
   "author": {
     "name": "Renowan",
