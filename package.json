@@ -13,7 +13,6 @@
     "email": "renowan@renowan.com",
     "url": "https://github.com/renowan"
   },
-  "gitHead": "c0b2bc9d6cbe8098b5debf62aab510873ddec974",
   "scripts": {
     "test": "mocha"
   },
@@ -30,6 +29,9 @@
     "underscore.string": "^3.0.3",
     "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   },
   "devDependencies": {
     "mocha": "*"
