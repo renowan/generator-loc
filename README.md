@@ -39,6 +39,12 @@ yo loc:bodyView {viewName} {dir}
 yo loc:elementView {viewName} {dir}
 ```
 
+### templateView 生成
+
+```bash
+yo loc:temp {viewName} {dir}
+```
+
 ### Pageと基本構成の生成
 
 HTML、View、Sass、Gulp一式
