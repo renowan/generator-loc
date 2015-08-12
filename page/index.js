@@ -28,6 +28,12 @@ module.exports = yeoman.generators.Base.extend({
   		);
 
   		this.fs.copyTpl(
+  			this.templatePath('../../templates/coffee/template-View.coffee'),
+  			this.destinationPath( this.env.options.appPath + '/coffee/' + myName + '/template-AppView.coffee' ),
+  			{ moduleName: myName }
+  		);
+
+  		this.fs.copyTpl(
   			this.templatePath('../../templates/coffee/instance-appModel.coffee'),
   			this.destinationPath( this.env.options.appPath + '/coffee/' + myName + '/instance-appModel.coffee' ),
   			{ moduleName: myName }
