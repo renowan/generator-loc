@@ -58,8 +58,8 @@ module.exports = yeoman.generators.Base.extend({
   		);
 
   		this.fs.copyTpl(
-  			this.templatePath('../../templates/task/page-task.coffee'),
-  			this.destinationPath( 'task/' + 'page-' + myName + '.coffee' ),
+  			this.templatePath('../../templates/tasks/page-task.coffee'),
+  			this.destinationPath( 'tasks/' + 'page-' + myName + '.coffee' ),
   			{ moduleName: myName }
   		);
 
