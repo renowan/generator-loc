@@ -4,6 +4,8 @@ gulp    = require 'gulp'
 page = '<%= moduleName %>'
 jira = ''
 
+isMinify = false
+
 gulp.task 'build-'+page,->
 	core.build( page , jira )
 
