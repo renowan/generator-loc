@@ -41,6 +41,10 @@ var BackboneGenerator = yeoman.generators.Base.extend({
 
   },
 
+  initializing: function () {
+    this.pkg = require('../package.json');
+  },
+
   writing: {
   	// app: function () {
 
@@ -61,9 +65,8 @@ var BackboneGenerator = yeoman.generators.Base.extend({
   },
 
 
-
   install: function () {
-    this.installDependencies();
+    this.installDependencies({ bower: false });
   }
 });
 
