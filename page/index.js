@@ -46,6 +46,12 @@ module.exports = yeoman.generators.Base.extend({
   		);
 
   		this.fs.copyTpl(
+  			this.templatePath('../../templates/coffee/main.coffee'),
+  			this.destinationPath( this.env.options.appPath + '/coffee/' + myName + '/main.coffee' ),
+  			{ moduleName: myName }
+  		);
+
+  		this.fs.copyTpl(
   			this.templatePath('../../templates/scss/dev.scss'),
   			this.destinationPath( this.env.options.appPath + '/scss/' + myName + '/' + myName + '-dev.scss' ),
   			{ moduleName: myName }
